@@ -6,8 +6,8 @@ import Header from '../components/Header';
 export const PrivateRoute = ({
     isAuthenticated, 
     component: Component,
-    ...rest
-}) => ( //everything else not destructured
+    ...rest //everything else not destructured
+}) => ( 
     <Route {...rest} component={(props) => (
         isAuthenticated ? (
             <div>
